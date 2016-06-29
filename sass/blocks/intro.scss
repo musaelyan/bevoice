@@ -1,0 +1,57 @@
+.intro-title {
+  margin: 0;
+  font-size: 45px;
+  margin-top: 150px;
+  font-weight: normal;
+  line-height: 55px;
+  @media ($tablet-width) {
+
+  }
+  @media ($mobile-width) {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+
+  span {
+    font-size: 70px;
+    line-height: 85px;
+    @media ($mobile-width) {
+      font-size: 45px;
+      line-height: 55px;
+    }
+  }
+}
+
+.intro-btns {
+  margin-top: 40px;
+  font-size: 0;
+}
+
+.intro-btn {
+  font-size: 20px;
+  display: inline;
+  color: white;
+  font-family: $HelveticaNeueCyr-Light;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease;
+  padding-bottom: 3px;
+  &:first-child {
+    margin-right: 50px;
+  }
+
+  &:hover {
+    border: 1px solid white;
+    padding: 15px 25px;
+    border-radius: 20px;
+  }
+
+  @media ($mobile-width) {
+    font-size: 17px;
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+
+
+}

@@ -1,0 +1,102 @@
+/*
+  Автор - Анастасия Мусаэльян
+*/
+
+
+@import "normalize.scss";
+
+// шрифт
+@font-face {
+  font-family: "HelveticaNeueCyr Thin";
+  src: local("HelveticaNeueCyr Thin"),
+       url("../fonts/helveticaneuecyr-thin.woff") format("woff"),
+       url("../fonts/helveticaneuecyr-thin.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr Light";
+  src: local("HelveticaNeueCyr Light"),
+       url("../fonts/helveticaneuecyr-light.woff") format("woff"),
+       url("../fonts/helveticaneuecyr-light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// подключение переменных
+@import "variables.scss";
+
+
+
+body {
+  background: $bg;
+  margin: 0px;
+  padding: 0px;
+  font-family: $HelveticaNeueCyr-Thin;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: normal;
+  color: $font-grey;
+  text-transform: none;
+  min-width: 1200px;
+  @media ($tablet-width) {
+    min-width: 768px;
+  }
+  @media ($mobile-width) {
+    min-width: 320px;
+    font-size: 15px;
+  }
+}
+
+.bg-gradient {
+  background: linear-gradient(130deg, #ec4b7f, #693f7e);
+  background-size: 400% 400%;
+  color: white;
+  animation: gradient 10s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradient {
+  0%{background-position:11% 0%}
+  50%{background-position:90% 100%}
+  100%{background-position:11% 0%}
+}
+
+.container {
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  @media ($tablet-width) {
+    width: 100%;
+  }
+  @media ($mobile-width) {
+    width: 320px;
+  }
+}
+
+.container--intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+// подключение миксинов
+@import "mixins.scss";
+
+// подключение всех стилей
+
+@import "blocks/btn.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu.scss";
+@import "blocks/intro.scss";
+@import "blocks/contacts.scss";
