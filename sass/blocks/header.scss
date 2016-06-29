@@ -1,3 +1,45 @@
 .header {
-  
+  background: #fff;
+  box-shadow: 0 4px 5px 2px #efefef;
+  padding: 30px 0;
+  margin-bottom: 50px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 50px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $purple;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid $purple;
+    padding-bottom: 3px;
+
+    &:hover {
+      border: 1px solid $pink;
+      padding: 15px 25px;
+      border-radius: 20px;
+      color: $pink;
+    }
+
+    &--active {
+      color: $font-grey;
+      border-bottom: none;
+
+      &:hover {
+        border: none;
+        padding: 0;
+        padding-bottom: 3px;
+        color: $font-grey;
+      }
+    }
+  }
+
 }

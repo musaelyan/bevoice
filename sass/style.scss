@@ -67,7 +67,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 1170px;
   padding: 0px 15px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -87,14 +87,28 @@ body {
   text-align: center;
 }
 
+.container--menu-projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container--projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
 
 
 // подключение миксинов
 @import "mixins.scss";
 
 // подключение всех стилей
-
-@import "blocks/btn.scss";
 @import "blocks/header.scss";
 @import "blocks/intro.scss";
 @import "blocks/contacts.scss";
+@import "blocks/projects.scss";
+@import "blocks/about.scss";
