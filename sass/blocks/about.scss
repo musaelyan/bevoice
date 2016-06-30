@@ -7,3 +7,59 @@
   border-radius: 12px;
   padding: 30px 40px;
 }
+
+.bio {
+  border-bottom: 1px solid $font-grey;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &__left-block {
+    width: 300px;
+  }
+
+  &__right-block {
+    width: 780px;
+  }
+
+  &__my-photo {
+    width: 300px;
+    height: auto;
+    img {
+      display: block;
+      border-radius: 12px;
+      width: 300px;
+      height: auto;
+    }
+  }
+
+  &__contacts {
+    margin-top: 25px;
+    padding-left: 30px;
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 5px;
+      background: $pink;
+      height: 100%;
+      background: #ec4b7f;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.education-item {
+  width: 320px;
+  text-align: center;
+  margin-top: 70px;
+}
