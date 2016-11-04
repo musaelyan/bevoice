@@ -8,6 +8,7 @@ $HelveticaNeueCyr-Thin: "HelveticaNeueCyr Thin", Arial, sans-serif;
 $HelveticaNeueCyr-Light: "HelveticaNeueCyr Light", Arial, sans-serif;
 
 
-$mobile-width: "max-width: 767px";
-$tablet-width: "min-width: 768px" and "max-width: 1199px";
+// если верстается desktop first
 $desktop-width: "min-width: 1200px";
+$tablet-width: "min-width: 768px" and "max-width: 1199px";
+$mobile-width: "max-width: 767px";

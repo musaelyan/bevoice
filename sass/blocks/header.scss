@@ -42,4 +42,13 @@
     }
   }
 
+  &__title-link {
+    text-decoration: none;
+    font-family: $HelveticaNeueCyr-Thin;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: normal;
+    color: $font-grey;
+  }
+
 }
