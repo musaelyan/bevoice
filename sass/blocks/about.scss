@@ -11,20 +11,47 @@
 .bio {
   border-bottom: 1px solid $font-grey;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  padding-bottom: 70px;
+  padding-top: 30px;
 
   &__left-block {
     width: 300px;
   }
 
   &__right-block {
-    width: 780px;
+    width: 800px;
+  }
+
+  &__title {
+    font-size: 25px;
+    line-height: 1.15;
+    margin: 0;
+    margin-top: 30px;
+
+    &--name {
+      margin: 0;
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 7px;
+  }
+
+  &__item {
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 
   &__my-photo {
     width: 300px;
     height: auto;
+    margin-bottom: 50px;
     img {
       display: block;
       border-radius: 12px;
@@ -37,6 +64,8 @@
     margin-top: 25px;
     padding-left: 30px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 
     &:after {
       content: "";
@@ -50,16 +79,85 @@
       top: 0;
     }
   }
+
+  &__contacts-title {
+    font-family: $HelveticaNeueCyr-Light;
+    color: black;
+    font-size: 18px;
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 18px;
+    color: $font-grey;
+    line-height: 1.15;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+
+    &:hover {
+      color: $purple;
+      text-decoration: underline;
+    }
+  }
 }
 
 .education {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 70px;
 }
 
 .education-item {
   width: 320px;
   text-align: center;
   margin-top: 70px;
+
+  &__link {
+    text-decoration: none;
+
+    &--htmlacademy:hover {
+      img {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__image {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;
+    line-height: 0;
+    padding: 20px;
+
+    &--ha-htmlcss {
+      background: #f15a29;
+    }
+
+    &--ha-adaptive {
+      background: #312785;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    span {
+      display: block;
+      font-family: $HelveticaNeueCyr-Light;
+      color: black;
+      font-size: 20px;
+    }
+  }
+
+  &__date {
+    font-size: 15px;
+    color: #888;
+  }
 }

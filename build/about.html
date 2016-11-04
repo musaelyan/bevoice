@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
     <title>Анастасия Мусаэльян | HTML - верстальщик</title>
-		<meta name="keywords" content="Мусаэльян, верстка, веб, HTML-верстальщик, разработка сайтов, верстка сайтов, landing pages, лендинг">
+		<meta name="keywords" content="Мусаэльян, верстка, веб, HTML-верстальщик, разработка сайтов, верстка сайтов, landing pages, лендинг, LESS, Sass, Grunt, БЭМ">
 		<meta name="description" content="Верстка крупных проектов (фиксированная, резиновая, адаптивная) без посадки на CMS и верстка посадочных страниц">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.min.css">
@@ -31,12 +31,12 @@
         <div class="bio">
           <div class="bio__left-block">
             <div class="bio__my-photo">
-              <img src="img/6eTBbGQf0rM.jpg" alt="pic" width="300" height="375">
+              <img src="img/my-photo.jpg" srcset="img/my-photo@2x.jpg 2x" alt="Аdobe illustrator" width="300" height="375">
             </div>
             <div class="bio__contacts">
               <div class="bio__contacts-title">Позвонить / написать:</div>
-              <a href="tel:+79163034362" class="bio__contacts-link">+7 (916) 303-43-62</a>
-              <a href="mailto:anastasia.musaelyan@gmail.com?subject=Сообщение%20для%20beVoice" class="bio__contacts-link">anastasia.musaelyan@gmail.com</a>
+              <a href="tel:+79163034362" class="bio__link">+7 (916) 303-43-62</a>
+              <a href="mailto:anastasia.musaelyan@gmail.com?subject=Сообщение%20для%20beVoice" class="bio__link">anastasia.musaelyan@gmail.com</a>
             </div>
             <div class="bio__contacts">
               <div class="bio__contacts-title">Найти меня в соц. сетях:</div>
@@ -46,17 +46,17 @@
             </div>
             <div class="bio__contacts">
               <div class="bio__contacts-title">Нанять:</div>
-              <a href="https://moikrug.ru/musaelyan" class="bio__link">https://moikrug.ru/musaelyan</span></a>
-              <a href="https://hh.ru/resume/" class="bio__link">https://hh.ru/resume</a>
+              <a href="https://moikrug.ru/musaelyan" target="_blank" class="bio__link">https://moikrug.ru/musaelyan</span></a>
+              <!-- <a href="https://hh.ru/resume/" target="_blank" class="bio__link">https://hh.ru/resume</a> -->
             </div>
           </div>
           <div class="bio__right-block">
-            <h1 class="bio__name">Анастасия Мусаэльян (Петрова)</h1>
+            <h1 class="bio__title bio__title--name">Анастасия Мусаэльян (Петрова)</h1>
             <div class="bio__job">HTML - верстальщик</div>
             <h2 class="bio__title">Основная специализация:</h2>
             <p class="bio__description">Верстка крупных проектов (фиксированная, резиновая, адаптивная) без посадки на CMS и верстка посадочных страниц</p>
             <h2 class="bio__title">Ключевые навыки:</h2>
-            <ul class="bio__list">
+            <ul class="bio__description">
               <li class="bio__item">HTML, CSS</li>
               <li class="bio__item">Начальные знания JS (+jQuery) на уровне подключения плагинов</li>
               <li class="bio__item">Валидная, кроссбраузерная (IE9+), адаптивная, семантическая вёрстка</li>
@@ -75,43 +75,57 @@
         <div class="education">
 
           <div class="education-item">
-            <div class="education-item__image">
-              <img src="img/0P1SrWTmTCE.jpg" alt="pic" width="177" height="177">
+            <div class="education-item__image education-item__image--ha-htmlcss">
+              <a href="https://htmlacademy.ru/profile/id124940" target="_blank" class="education-item__link education-item__link--htmlacademy">
+                <img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="160" height="55">
+              </a>
             </div>
-            <p class="education-item__description">Интенсивный онлайн-курс «Продвинутый HTML и CSS» в HTML Academy</p>
+            <p class="education-item__description"><span>Наставник</span>на интенсиве «Базовый HTML и CSS»<br>в HTML Academy</p>
+            <div class="education-item__date">Август 2016 - по настоящее время</div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-item__image education-item__image--ha-adaptive">
+              <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="education-item__link education-item__link--htmlacademy">
+                <img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="160" height="55">
+              </a>
+            </div>
+            <p class="education-item__description">Интенсивный онлайн-курс «Продвинутый HTML и CSS»<br>в HTML Academy</p>
             <div class="education-item__date">Апрель 2016</div>
           </div>
 
           <div class="education-item">
             <div class="education-item__image">
-              <img src="img/0P1SrWTmTCE.jpg" alt="pic" width="177" height="177">
+              <img src="img/artgorbunov.jpg" srcset="img/artgorbunov@2x.jpg 2x" alt="Дизайн-бюро Артёма Горбунова" width="160" height="55" class="project__picture">
             </div>
-            <p class="education-item__description">Интенсивный онлайн-курс «Продвинутый HTML и CSS» в HTML Academy</p>
-            <div class="education-item__date">Апрель 2016</div>
+            <p class="education-item__description">Пользовательский интерфейс<br>и представление информации<br>в Учебном центре Артёма Горбунова</p>
+            <div class="education-item__date">Март 2016</div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-item__image education-item__image--ha-htmlcss">
+              <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="education-item__link education-item__link--htmlacademy">
+                <img src="img/logo-htmlacademy.svg" alt="htmlacademy" width="160" height="55">
+              </a>
+            </div>
+            <p class="education-item__description">Интенсивный онлайн-курс «Базовый HTML и CSS» в HTML Academy</p>
+            <div class="education-item__date">Ноябрь 2015</div>
           </div>
 
           <div class="education-item">
             <div class="education-item__image">
-              <img src="img/0P1SrWTmTCE.jpg" alt="pic" width="177" height="177">
+              <img src="img/illustrator.jpg" srcset="img/illustrator@2x.jpg 2x" alt="Аdobe illustrator" width="160" height="55" class="project__picture">
             </div>
-            <p class="education-item__description">Интенсивный онлайн-курс «Продвинутый HTML и CSS» в HTML Academy</p>
-            <div class="education-item__date">Апрель 2016</div>
+            <p class="education-item__description">Аdobe illustrator CS5 в Центрe компьютерного обучения «Специалист.Ру» при МГТУ им. Н.Э.Баумана</p>
+            <div class="education-item__date">2011 год</div>
           </div>
 
           <div class="education-item">
             <div class="education-item__image">
-              <img src="img/0P1SrWTmTCE.jpg" alt="pic" width="177" height="177">
+              <img src="img/photoshop.jpg" srcset="img/photoshop@2x.jpg 2x" alt="Adobe Photoshop" width="160" height="55" class="project__picture">
             </div>
-            <p class="education-item__description">Интенсивный онлайн-курс «Продвинутый HTML и CSS» в HTML Academy</p>
-            <div class="education-item__date">Апрель 2016</div>
-          </div>
-
-          <div class="education-item">
-            <div class="education-item__image">
-              <img src="img/0P1SrWTmTCE.jpg" alt="pic" width="177" height="177">
-            </div>
-            <p class="education-item__description">Интенсивный онлайн-курс «Продвинутый HTML и CSS» в HTML Academy</p>
-            <div class="education-item__date">Апрель 2016</div>
+            <p class="education-item__description">Adobe Photoshop CS в Центрe компьютерного обучения «Специалист.Ру» при МГТУ им. Н.Э.Баумана</p>
+            <div class="education-item__date">2004 год</div>
           </div>
 
         </div>

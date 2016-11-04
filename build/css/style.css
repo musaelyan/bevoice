@@ -679,19 +679,35 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding-bottom: 70px;
+  padding-top: 30px; }
   .bio__left-block {
     width: 300px; }
   .bio__right-block {
-    width: 780px; }
+    width: 800px; }
+  .bio__title {
+    font-size: 25px;
+    line-height: 1.15;
+    margin: 0;
+    margin-top: 30px; }
+    .bio__title--name {
+      margin: 0;
+      font-size: 40px;
+      margin-bottom: 5px; }
+  .bio__description {
+    margin: 0;
+    margin-top: 7px; }
+  .bio__item {
+    margin-bottom: 5px; }
+    .bio__item:last-child {
+      margin-bottom: 0px; }
   .bio__my-photo {
     width: 300px;
-    height: auto; }
+    height: auto;
+    margin-bottom: 50px; }
     .bio__my-photo img {
       display: block;
       border-radius: 12px;
@@ -700,7 +716,13 @@ body {
   .bio__contacts {
     margin-top: 25px;
     padding-left: 30px;
-    position: relative; }
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .bio__contacts:after {
       content: "";
       display: block;
@@ -711,6 +733,22 @@ body {
       position: absolute;
       left: 0;
       top: 0; }
+  .bio__contacts-title {
+    font-family: "HelveticaNeueCyr Light", Arial, sans-serif;
+    color: black;
+    font-size: 18px;
+    line-height: 1.15;
+    margin-bottom: 8px; }
+  .bio__link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #43484c;
+    line-height: 1.15;
+    transition: all 0.3s ease;
+    margin-bottom: 5px; }
+    .bio__link:hover {
+      color: #693f7e;
+      text-decoration: underline; }
 
 .education {
   display: -webkit-flex;
@@ -721,20 +759,47 @@ body {
           flex-wrap: wrap;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
-          justify-content: space-around; }
+          justify-content: space-around;
+  padding-bottom: 70px; }
 
 .education-item {
   width: 320px;
   text-align: center;
   margin-top: 70px; }
-
-@media (max-width: 1199px){
+  .education-item__link {
+    text-decoration: none; }
+    .education-item__link--htmlacademy:hover img {
+      opacity: 0.8; }
+  .education-item__image {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;
+    line-height: 0;
+    padding: 20px; }
+    .education-item__image--ha-htmlcss {
+      background: #f15a29; }
+    .education-item__image--ha-adaptive {
+      background: #312785; }
+  .education-item__description {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px; }
+    .education-item__description span {
+      display: block;
+      font-family: "HelveticaNeueCyr Light", Arial, sans-serif;
+      color: black;
+      font-size: 20px; }
+  .education-item__date {
+    font-size: 15px;
+    color: #888; }
+  @media (max-width: 1199px){
   body{
     min-width: 768px; }
   .container{
     width: 100%; } }
-
-@media (max-width: 767px){
+  @media (max-width: 767px){
   body{
     min-width: 320px;
     font-size: 15px; }
