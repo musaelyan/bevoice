@@ -609,7 +609,8 @@ br.desktop {
     box-shadow: 0 4px 5px 2px #dadada; }
   .project--hidden {
     visibility: hidden;
-    display: block; }
+    display: block;
+    margin-bottom: 0px; }
   .project__image {
     padding: 30px;
     padding-bottom: 0;
