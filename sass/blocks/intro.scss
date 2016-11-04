@@ -25,6 +25,14 @@
 .intro-btns {
   margin-top: 40px;
   font-size: 0;
+
+  &--inner {
+    display: none;
+    @media ($mobile-width) {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .intro-btn {
@@ -50,6 +58,16 @@
     font-size: 17px;
     &:first-child {
       margin-right: 30px;
+    }
+  }
+
+  &--inner {
+    color: $font-grey;
+    border-bottom: 1px solid $font-grey;
+    &:hover {
+      border: 1px solid $font-grey;
+      padding: 15px 25px;
+      border-radius: 20px;
     }
   }
 

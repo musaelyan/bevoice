@@ -522,6 +522,8 @@ br.desktop {
 .intro-btns {
   margin-top: 40px;
   font-size: 0; }
+  .intro-btns--inner {
+    display: none; }
 
 .intro-btn {
   font-size: 20px;
@@ -538,6 +540,13 @@ br.desktop {
     border: 1px solid white;
     padding: 15px 25px;
     border-radius: 20px; }
+  .intro-btn--inner {
+    color: #43484c;
+    border-bottom: 1px solid #43484c; }
+    .intro-btn--inner:hover {
+      border: 1px solid #43484c;
+      padding: 15px 25px;
+      border-radius: 20px; }
 
 .contacts {
   margin-top: 50px;
@@ -869,6 +878,9 @@ br.desktop {
   .intro-title span{
     font-size: 45px;
     line-height: 50px; }
+  .intro-btns--inner{
+    display: block;
+    margin-bottom: 15px; }
   .intro-btn{
     font-size: 17px; }
   .intro-btn:first-child{
