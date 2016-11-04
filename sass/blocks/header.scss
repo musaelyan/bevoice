@@ -4,15 +4,28 @@
   padding: 30px 0;
   margin-bottom: 50px;
 
+  &__menu {
+    @media ($mobile-width) {
+      order: 2;
+      margin-top: 15px;
+      font-size: 18px;
+    }
+
+  }
+
   &__list {
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
+    order: 2
   }
 
   &__item {
     margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__link {
@@ -49,6 +62,9 @@
     line-height: 25px;
     font-weight: normal;
     color: $font-grey;
+    @media ($mobile-width) {
+      order: 1;
+    }
   }
 
 }
