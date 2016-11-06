@@ -520,7 +520,7 @@ br.desktop {
     line-height: 85px; }
 
 .intro-btns {
-  margin-top: 40px;
+  margin-top: 25px;
   font-size: 0; }
   .intro-btns--inner {
     display: none; }
@@ -633,7 +633,8 @@ br.desktop {
     color: white;
     border-radius: 12px 12px 0 0;
     opacity: 0;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    text-align: center; }
     .project__dropdown-link span {
       position: absolute;
       top: 50%;
@@ -672,7 +673,8 @@ br.desktop {
     line-height: 20px;
     text-decoration: none;
     color: #693f7e;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    word-wrap: break-word; }
     .project__description-link:hover {
       color: #ec4b7f;
       text-decoration: underline; }
@@ -887,7 +889,7 @@ br.desktop {
   .intro-btn:first-child{
     margin-right: 30px; }
   .contacts--intro{
-    margin-top: 50px; }
+    margin-top: 40px; }
   .contacts__item{
     line-height: 24px; }
   .social-btn{

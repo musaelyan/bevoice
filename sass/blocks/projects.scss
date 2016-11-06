@@ -66,6 +66,7 @@
     border-radius: 12px 12px 0 0;
     opacity: 0;
     transition: all 0.3s ease;
+    text-align: center;
 
     span {
       position: absolute;
@@ -125,6 +126,7 @@
     text-decoration: none;
     color: $purple;
     transition: all 0.3s ease;
+    word-wrap: break-word;
     &:hover {
       color: $pink;
       text-decoration: underline;
